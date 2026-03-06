@@ -1,0 +1,35 @@
+# Project Workflow
+
+**The MedTrack Cloud-Enabled Healthcare Management System is developed using a structured workflow consisting of multiple stages. Each stage integrates AWS cloud services with a Flask-based web application to provide efficient healthcare management between patients and doctors.**
+
+1. Backend Development and Application Setup
+
+The backend of the application is developed using Flask (Python). The application handles patient and doctor registration, login authentication, appointment booking, medical record management, and diagnosis submissions. AWS services are integrated into the backend using the boto3 Python SDK, enabling the system to interact with cloud resources such as DynamoDB and SNS.
+
+2. AWS Account Setup
+
+An AWS account is created and accessed through the AWS Management Console. This account is used to configure all the required AWS services for the MedTrack system, including DynamoDB, SNS, IAM, and EC2.
+
+3. DynamoDB Database Creation
+
+A DynamoDB database is created to store application data such as patient details, doctor information, appointment records, and medical reports. Tables are configured with attributes like patient email, doctor ID, appointment ID, diagnosis details, and medical history records to manage healthcare data efficiently.
+
+4. SNS Notification Setup
+
+Amazon Simple Notification Service (SNS) is used to send notifications related to healthcare activities. When a patient books an appointment or submits a medical report, SNS sends notification alerts to doctors and administrators via email, ensuring real-time communication within the system.
+
+5. IAM Role Configuration
+
+AWS Identity and Access Management (IAM) roles and policies are configured to allow the application to securely access AWS services such as DynamoDB and SNS. This ensures that only authorized system components can interact with sensitive healthcare data stored in the cloud.
+
+6. EC2 Instance Setup
+
+An Amazon EC2 instance is launched to host the MedTrack web application. The instance acts as the application server running the Flask backend. Security groups are configured to allow required access such as HTTP for web access and SSH for remote management.
+
+7. Deployment on EC2
+
+The Flask application files are uploaded to the EC2 instance, and the application server is started. Once deployed, users can access the MedTrack system through the server’s public IP address to perform actions such as booking appointments, viewing medical history, and managing healthcare data.
+
+8. Testing and System Verification
+
+The system is tested to ensure that all functionalities operate correctly. This includes verifying patient registration, doctor login, appointment booking, medical record access, and notification delivery through SNS. Successful testing confirms that the system provides a reliable cloud-based healthcare management platform.

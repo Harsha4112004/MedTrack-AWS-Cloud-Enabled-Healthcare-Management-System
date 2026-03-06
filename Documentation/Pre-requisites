@@ -1,0 +1,31 @@
+# Pre-requisites Setup Completed
+
+**The following tools and services were verified before starting the MedTrack Cloud-Enabled Healthcare Management System project:**
+
+1. AWS Account
+
+Successfully created and logged into the AWS Management Console to manage all cloud resources required for the project.
+
+2. AWS IAM
+
+Access to AWS Identity and Access Management (IAM) was verified to manage roles, policies, and permissions for secure access to AWS services.
+
+3. AWS EC2
+
+Access to the Amazon EC2 service was confirmed to host and deploy the Flask-based MedTrack application.
+
+4. AWS DynamoDB
+
+Verified the availability of Amazon DynamoDB to store healthcare data such as patient records, doctor information, and appointment details using a NoSQL database.
+
+5. Development Environment
+
+Installed and configured the following development tools:
+
+• Python – used for backend development with Flask
+• Git – used for version control and project management
+• Visual Studio Code – used as the code editor for application development
+
+Conclusion
+
+These prerequisites ensure the development environment is properly configured for building and deploying the MedTrack Cloud-Based Healthcare Management System.
